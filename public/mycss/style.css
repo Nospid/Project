@@ -1,0 +1,227 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+
+
+
+
+
+
+/* .navbar{
+    background-color: blue;
+    padding: 15px;
+}
+
+.menu{
+    text-align: right;
+}
+
+.menu li{
+    display: inline;
+    margin: 10px
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.footer{
+    background-color: red;
+    color: white;
+} */
+
+.card:hover {
+    animation: flicker 0.5s infinite;
+  }
+  
+  @keyframes flicker {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  .card-title {
+    color: #2f3132;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: #6c757d;
+  }
+  
+  .text-decoration-line-through {
+    text-decoration: line-through;
+  }
+  
+  .text-secondary {
+    color: #1f79c8;
+  }
+  
+  .bg-primary {
+    background-color: #828f9c;
+  }
+  
+  .text-white {
+    color: #c12b2b;
+  }
+  
+  .rounded-pill {
+    border-radius: 50px;
+  }
+  
+  .px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  
+
+  .card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color as needed */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .card-overlay {
+    opacity: 1;
+  }
+  
+  
+  
+  .flick-effect {
+    animation: flickAnimation 10s infinite;
+  }
+  
+  @keyframes flickAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(250deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  
+  
+
+
+
+  
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+}
+
+.wrapper{
+    padding: 30px 50px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin: 10px auto;
+    max-width: 600px;
+}
+h4{
+    letter-spacing: -1px;
+    font-weight: 400;
+}
+.img{
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+#img-section p,#deactivate p{
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+#img-section b,#img-section button,#deactivate b{
+    font-size: 14px; 
+}
+
+label{
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+    padding-left: 3px;
+}
+
+.form-control{
+    border-radius: 10px;
+}
+
+input[placeholder]{
+    font-weight: 500;
+}
+.form-control:focus{
+    box-shadow: none;
+    border: 1.5px solid #0779e4;
+}
+select{
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: 40px;
+    padding: 5px 10px;
+    /* -webkit-appearance: none; */
+}
+
+select:focus{
+    outline: none;
+}
+.button{
+    background-color: #fff;
+    color: #0779e4;
+}
+.button:hover{
+    background-color: #081a2a;
+    color: #fff;
+}
+.btn-primary{
+    background-color: #0779e4;
+}
+
+
